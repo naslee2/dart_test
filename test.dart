@@ -1,6 +1,9 @@
 // import 'dart:math' show Random;
 
-//This is a test of the Dart programming language.
+//This is a test of the Dart programming language, using an attempt to do OOP using Dart. 
+//Main class calls FirstClass which calls SecondClass which in turn calls ThirdClass. Both SecondClass and ThirdClass are extends of FirstClass
+//ThirdClass is calling LastClass which is a extend of Thirdclass.
+
 
 main() async{
   print("this is a test run!");
