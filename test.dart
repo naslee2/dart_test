@@ -6,7 +6,7 @@
 
 
 main() async{
-  print("this is a test run!");
+  print("this is a test run! Calling the First Class right now!");
   FirstClass.firstprint();
 
 }
@@ -21,7 +21,7 @@ abstract class FirstClass{
 
 class SecondClass extends FirstClass{
   SecondPrint(){
-    String secondString = "Running the Second String!";
+    String secondString = "Running the Second Class!";
     print(secondString);
   }
   
@@ -29,7 +29,7 @@ class SecondClass extends FirstClass{
 
 class ThirdClass extends FirstClass{
   ThirdPrint(){
-    String thirdClass = "Running the Third String!";
+    String thirdClass = "Running the Third Class!";
     print(thirdClass);
     LastClass().LastPrint();
   }
@@ -38,7 +38,8 @@ class ThirdClass extends FirstClass{
 
 class LastClass extends ThirdClass{
   LastPrint(){
-    print("This is the Last Class called! Ending!");
+    String lastString = "This is the Last Class called! Ending!";
+    print(lastString);
   }
   
 }
